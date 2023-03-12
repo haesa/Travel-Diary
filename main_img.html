@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <style>
+      body, #grid p{
+        margin:0px;
+        font-family: 'Nanum Myeongjo', 'Shadows Into Light';
+      }
+      #grid{
+        display:grid;
+        grid-template-columns:50% 50%;
+        width:1119px;height:790px;
+        margin-left:100px; margin-right:100px;
+      }
+      #grid div{
+        display: flex;
+        justify-content: center; align-items: center;
+      }
+      #jeju{
+        grid-row-start: 1; grid-row-end: 3;
+        background-image:url('jeju.jpg'); background-size: contain; background-repeat: no-repeat;
+        margin-right:15.5px;
+        border-right:#EAEAEA 1.5px solid;
+        color:white;
+      }
+      #london{
+        background-image:url('london.jpg'); background-size: contain; background-repeat: no-repeat;
+        border-bottom:#EAEAEA 1.5px solid;
+      }
+      #chungnam{
+        background-image:url('chungnam.jpg'); background-size: contain;
+        background-repeat: no-repeat; background-position:bottom;
+      }
+      #jeju p{
+        padding-top:60px;
+      }
+      #london p{
+        padding-left:100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2 style="padding-left:20px;">"자연을 품은 향"</h2>
+    </div>
+    <div id="grid">
+      <div id="jeju"><p>"제주, 싱그러운 귤 향"</p></div>
+      <div id="london"><p>"오후 1시, 은은히 퍼지는 비 내음"</p></div>
+      <div id="chungnam"><p>" 따뜻한 바다 향기"</p></div>
+    </div>
+  </body>
+</html>
